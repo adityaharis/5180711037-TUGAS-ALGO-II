@@ -1,0 +1,27 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+float pangkat(float ang, float pang){
+if(pang==0){
+    return 1;}
+
+else if(pang>0){
+    return ang*pangkat(ang,pang-1);
+}
+else if(pang<0){
+    return 1/ang*pangkat(ang,pang+1);
+}}
+int main(){
+string ula;
+do{
+    float a,b;
+cout<<"input angka\t:";cin>>a;
+cout<<"input angka\t:";cin>>b;
+cout<<"hasil\t\t:"<<pangkat(a,b);
+cout<<"\n\nulangi program(ya/tidak)\t:";cin>>ula;
+cout<<endl;
+}
+while(ula=="ya");
+
+}
