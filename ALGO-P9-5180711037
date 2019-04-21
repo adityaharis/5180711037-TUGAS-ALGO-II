@@ -1,6 +1,11 @@
 #include <iostream>
 #include <conio.h>
 using namespace std;
+void judul(){
+cout<<"\t_____PROGRAM MENGHITUNG PANGKAT + DAN -\t_____";
+cout<<endl;
+cout<<endl;}
+
 
 float pangkat(float ang, float pang){
 if(pang==0){
@@ -13,6 +18,7 @@ else if(pang<0){
     return 1/ang*pangkat(ang,pang+1);
 }}
 int main(){
+    judul();
 string ula;
 do{
     float a,b;
@@ -25,3 +31,4 @@ cout<<endl;
 while(ula=="ya");
 
 }
+
